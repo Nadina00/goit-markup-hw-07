@@ -1,10 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  color: #757575;
-  background: #FFFFFF;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,10 +76,12 @@ body {
 }
 
 .contact__list {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -119,6 +114,13 @@ body {
   transition-property: color;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #757575;
+  background: #FFFFFF;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -127,7 +129,7 @@ body {
   margin-left: auto;
 }
 
-.nav__list, .contact__list, .peculiarities__list, .works__list, .team__list, .clents__list, .social__list, .address__list, .filter_list, .project__list {
+.nav__list, .peculiarities__list, .works__list, .team__list, .clents__list, .social__list, .address__list, .filter_list, .project__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1132,8 +1134,10 @@ body {
   -webkit-transform: translate(-50%, -50%) translateY(100%);
           transform: translate(-50%, -50%) translateY(100%);
   opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
 }
 
 .project__link:hover .project__hover,
@@ -1158,6 +1162,10 @@ body {
           transform: translateY(100%);
   -webkit-transition-property: opacity;
   transition-property: opacity;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .project__position:hover::before,

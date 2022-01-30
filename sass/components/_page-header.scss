@@ -1,8 +1,6 @@
 body{
-font-family: 'Roboto', sans-serif;
-font-size: 14px;
-color: $first-color;
-background: $background-head;}
+@extend %body;}
+
 .container{
     @extend %container;
     }
@@ -74,9 +72,10 @@ background: $background-head;}
     }
     
     .contact__list {
-    @extend %list;
-    display: flex;
+    list-style: none;
+    padding: 0;
     margin-left: auto;
+    display: flex;
     align-items: center;
     }
     .contact__item{
