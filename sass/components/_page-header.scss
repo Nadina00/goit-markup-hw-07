@@ -1,9 +1,7 @@
-body{
-@extend %body;}
-
 .container{
     @extend %container;
     }
+    
 .header{
     display: flex;
     align-items: center;

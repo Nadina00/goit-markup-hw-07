@@ -1,3 +1,10 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #757575;
+  background: #FFFFFF;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,13 +119,6 @@
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  color: #757575;
-  background: #FFFFFF;
 }
 
 .container {
@@ -969,6 +969,7 @@ body {
   padding-left: 29px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button__icon--send {
